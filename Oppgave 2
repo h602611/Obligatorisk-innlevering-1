@@ -1,0 +1,55 @@
+package no.hvl.dat100;
+import static java.lang.Integer.parseInt;
+import static javax.swing.JOptionPane.*;
+public class O2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ 
+		String poengTxt = showInputDialog("Skriv inn Poengsum");
+		int poeng = parseInt(poengTxt);
+		
+		if (poeng >= 90) {
+			if (100 >= poeng) {
+				System.out.println("Du fikk karakteren A!");
+			}
+		
+		}
+		if (poeng >= 80) {
+			if (89 >= poeng) {
+				System.out.println("Du fikk karakteren B!");
+			}
+		
+		}
+		if (poeng >= 60) {
+			if (79 >= poeng) {
+				System.out.println("Du fikk karakteren C!");
+			}
+		
+		}
+		if (poeng >= 50) {
+			if (59 >= poeng) {
+				System.out.println("Du fikk karakteren D!");
+			}
+		
+		}
+		if (poeng >= 40) {
+			if (49 >= poeng) {
+				System.out.println("Du fikk karakteren E!");
+			}
+		
+		}
+		if (poeng >= 0) {
+			if (39 >= poeng) {
+				System.out.println("Du fikk karakteren F!");
+			}
+		
+		}
+		if (poeng > 100) {
+			System.out.println("Du kan ikke ha fått mer enn 100 poeng");
+		}
+		if (0 > poeng) {
+			System.out.println("Du kan ikke ha fått mindre enn 0 poeng");
+		}
+		
+	}
