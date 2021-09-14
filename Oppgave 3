@@ -1,0 +1,18 @@
+package no.hvl.dat100;
+import static java.lang.Integer.parseInt;
+import static javax.swing.JOptionPane.*;
+
+public class O3 {
+//Lag et program som leser inn et heltall n > 0, beregner verdien n! (n fakultet) og skriver verdien til n! ut på skjermen, der n! = 1*2*3* … *(n-1)*n.
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String tallTxt = showInputDialog("Skriv inn et heltall");
+		int tall = parseInt(tallTxt);
+		int fact = 1;
+		for (int i = 1; i <= tall; i++) 
+	    {
+	        fact = fact * i;
+	    }
+	    System.out.println(fact);
+	}
+}
