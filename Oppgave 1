@@ -1,0 +1,41 @@
+package no.hvl.dat100;
+import static java.lang.Integer.parseInt;
+import static javax.swing.JOptionPane.*;
+public class O1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double Trinn0 = 0;
+		double Trinn1 = 0.0093;
+		double Trinn2 = 0.0241;
+		double Trinn3 = 0.1152;
+		double Trinn4 = 0.1452;
+		String bruttoTxt = showInputDialog("Skriv inn bruttoinntekt");
+		int brutto = parseInt(bruttoTxt);
+		
+		if (164100 >= brutto) {
+			System.out.print(brutto *Trinn0);
+		}
+		
+		if (brutto >= 164101) {
+			if (230950 >= brutto) {
+			System.out.println(brutto * Trinn1);
+			}
+			
+		}
+		if (brutto >= 230951) {
+			if (580650 >= brutto) {
+				System.out.println(brutto * Trinn2);
+			}
+		}
+		if (brutto >= 580651) {
+			if (934050 >= brutto) {
+				System.out.println(brutto * Trinn3);
+			}
+		}
+		if (brutto >= 934051) {
+				System.out.println(brutto * Trinn4);
+		}
+	}
+
+}
